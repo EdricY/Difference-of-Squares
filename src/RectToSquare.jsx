@@ -13,8 +13,8 @@ export default function RectToSquare() {
 
   // the grid is flipped over the y axis- very strange behavior for now.
   return <>
-    <div className="relative">
-      <div className="text-center">Click to animate!</div>
+    <div className="relative my-20">
+      <div className="text-center">Click me!</div>
       <div
         onClick={() => setAtStart(!atStart)}
         className={'grid grid-10 w-full m-auto border-l-4 border-t-4 border-b relative -scale-y-100 box-content'}
@@ -35,7 +35,7 @@ export default function RectToSquare() {
             transition: atStart ? 'opacity 0.4s' : 'opacity 0.4s 1.2s'
           }}
         >
-          <div className="-scale-y-100 text-4xl">{5-h}²</div>
+          <div className="-scale-y-100 text-4xl">{5 - h}²</div>
 
         </div>
         {a10.map(y =>
@@ -68,7 +68,7 @@ export default function RectToSquare() {
         ></div>
 
       </div>
-      <input list="rect-range" className="w-full" type="range" min="6" max="9" step="1" value={x} onChange={e => setX(Number(e.target.value))} />
+      <input list="rect-range" className="range-size" type="range" min="6" max="9" step="1" value={x} onChange={e => setX(Number(e.target.value))} />
       <datalist id="rect-range">
         <option>6</option>
         <option>7</option>
@@ -77,8 +77,12 @@ export default function RectToSquare() {
       </datalist>
       {/* <div className="text-4xl absolute top-60 left-30 ">
         {x} x {10 - x}
-        <span class={"transition " + (atStart ? "opacity-0" : "")}> = 5² - {5-h}²</span>
+        <span class={"transition " + (atStart ? "opacity-0" : "")}> = 5² - {5 - h}²</span>
       </div> */}
+    <div className="text-4xl my-4">
+      {x} × {10 - x}
+      <span className={"transition " + (atStart ? "opacity-0" : "")}> = 5² − {5 - h}²</span>
+    </div>
     </div>
 
   </>
