@@ -4,12 +4,13 @@ import viteLogo from '/vite.svg'
 import Plot from './Plot'
 import RectToSquare from './RectToSquare'
 import MultTable from './MultTable'
+import DifferenceCalc from './DifferenceCalc'
 
 function App() {
 
   return (
     <>
-      <div className='text-xl py-10 h-screen flex flex-col justify-center'>
+      <div className='slide text-xl py-10'>
         Let's begin with a story problem.
         <div className='my-10'></div>
         <p>
@@ -22,11 +23,25 @@ function App() {
         <p>What kind of rectangular enclosures can he make?<br />What are their areas?</p>
 
       </div>
-      <Plot />
-      <div className='mt-20'></div>
-      <RectToSquare />
+      <div className='slide'>
+        <Plot />
+      </div>
 
-      <MultTable />
+      <div className='slide text-3xl'>
+        What is the difference between the largest enclosure and the others?
+        <DifferenceCalc />
+
+      </div>
+
+      <div className='slide'>
+
+        <RectToSquare />
+      </div>
+
+      <div className='slide'>
+
+        <MultTable />
+      </div>
     </>
 
   );

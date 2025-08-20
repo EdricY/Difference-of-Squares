@@ -116,7 +116,7 @@ export default function MultTable() {
               {
                 ((x + y) % 2 == 0) &&
                 <span className="appear" style={{
-                  animationDelay: timings[x + "×" + y] ? timings[x + "×" + y] + "ms" : "10s"
+                  animationDelay: timings[x + "×" + y] ? timings[x + "×" + y] + "ms" : "15s"
                 }}>{x * y}</span>
               }
             </div>
