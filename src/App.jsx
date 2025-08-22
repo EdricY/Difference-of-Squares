@@ -34,16 +34,38 @@ function App() {
       </div>
 
       <div className='slide'>
-
         <RectToSquare />
       </div>
 
       <div className='slide'>
-
         <MultTable />
       </div>
-    </>
 
+      <div className='slide'>
+        31 × 29
+      </div>
+
+      <div className='slide'>
+        17²
+      </div>
+
+      <div className='slide'>
+        <div>
+
+          How much bigger is an 18' pizza than a 12' pizza?
+        </div>
+      </div>
+
+      <div className='slide'>
+        <math>
+          <mn>2</mn>
+          <mo>+</mo>
+          <msqrt>
+            <mn>5</mn>
+          </msqrt>
+        </math>
+      </div>
+    </>
   );
 }
 
