@@ -11,6 +11,9 @@ function App() {
   return (
     <>
       <div className='slide text-xl py-10'>
+        <h1 className='text-4xl text-center'>Difference of Squares</h1>
+      </div>
+      <div className='slide text-xl py-10'>
         Let's begin with a story problem.
         <div className='my-10'></div>
         <p>
