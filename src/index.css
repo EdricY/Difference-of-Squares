@@ -12,6 +12,24 @@
   .slide {
     @apply h-screen flex flex-col justify-center snap-center;
   }
+
+  .triangle {
+    width: 200px;
+    aspect-ratio: 1;
+    clip-path: 
+      polygon(
+        /* the outer points */
+        0 0,100% 100%,0 100%,0 0,
+        /* the inner points */
+        5% 10%,5% 95%,90% 95%,5% 10%
+      );
+    background-color: black;
+    /* width: 0px;
+    height: 0px;
+    border-style: so500;
+    border-width: 0 0 162px 291px;
+    border-color: transparent transparent #4d120c transparent; */
+  }
 }
 
 

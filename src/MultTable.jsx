@@ -13,8 +13,8 @@ function isPerfectSq(x, y) {
   return x == y;
 }
 
-let start = 400;
-let inc = 200
+let start = 2000;
+let inc = 500;
 const timings = {
   "1×1": start + inc * 1,
   "2×2": start + inc * 2,
@@ -116,7 +116,7 @@ export default function MultTable() {
               {
                 ((x + y) % 2 == 0) &&
                 <span className="appear" style={{
-                  animationDelay: timings[x + "×" + y] ? timings[x + "×" + y] + "ms" : "15s"
+                  animationDelay: timings[x + "×" + y] ? timings[x + "×" + y] + "ms" : "50s"
                 }}>{x * y}</span>
               }
             </div>
@@ -127,7 +127,8 @@ export default function MultTable() {
         {hoveredId && <>
           {hoveredId}
           {' '}={' '}
-          {referenceId.split("×")[0]}² −
+          {referenceId.split("×")[0]}²
+          {' '}−{' '}
           {subtractId.split("×")[0]}²
         </>}
 
