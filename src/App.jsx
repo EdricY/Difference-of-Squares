@@ -87,7 +87,7 @@ function App() {
 
         <div className='relative'>
           <svg viewBox="-2 -1 23 15" strokeWidth="0.5" width="400" stroke-linejoin="miter" stroke-miterlimit="10">
-            <path d="M 0,0 L 0,10 L 20,10Z" stroke='black' fill="none" />
+            <path d="M 0,0 L 0,10 L 20,10Z M 0,8.5 L 1.5,8.5 L 1.5,10" stroke='black' fill="none" />
           </svg>
           <div className='absolute left-0 top-1/3'>x</div>
           <div className='absolute right-2/3 bottom-4'>14</div>
@@ -96,9 +96,9 @@ function App() {
 
         <div className='relative self-end mt-10'>
           <svg viewBox="-2 -1 23 20" strokeWidth="0.5" width="400" stroke-linejoin="miter" stroke-miterlimit="10">
-            <path d="M 0,0 L 0,14 L 20,14Z" stroke='black' fill="none" />
+            <path d="M 0,0 L 0,14 L 20,14Z M 0,12 L 2,12 L 2,14" stroke='black' fill="none" />
           </svg>
-          <div className='absolute left-0 top-1/3'>x</div>
+          <div className='absolute left-0 top-1/3'>x</div>  
           <div className='absolute left-2/5 bottom-10'>20</div>
           <div className='absolute left-3/6 top-1/5'>24</div>
         </div>
